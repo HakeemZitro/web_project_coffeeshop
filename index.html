@@ -10,7 +10,6 @@
     <meta name="author" content="Hakeem Ortiz" />
     <meta name="keywords" content="cafetería, café, recetas, reservación" />
     <title>Cafetería Triple Macchiato</title>
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,12 +25,14 @@
         <nav class="nav">
           <img
             src="./images/logo_coffeeshop_dark.svg"
-            alt="Logotipo de Cafetería Triple Macchiato"
+            alt="Logotipo negro de Cafetería Triple Macchiato"
             class="nav__logo"
           />
           <ul class="nav__links">
             <li><a href="#recipes" class="nav__link">Recetas</a></li>
-            <li><a href="#reservation" class="nav__link">Reserva una mesa</a></li>
+            <li>
+              <a href="#reservation" class="nav__link">Reserva una mesa</a>
+            </li>
             <li><a href="#footer" class="nav__link">Contactanos</a></li>
           </ul>
         </nav>
@@ -107,21 +108,86 @@
           <h2 class="reservation__title">Reservar una mesa</h2>
           <form action="#" method="post" class="form reservation__form">
             <fieldset class="form__fieldset">
-              <label for="name" class="form__label">Nombre *
-              <input type="text" class="form__input" id="name" placeholder="Nombre" required></label>
-              <label for="number" class="form__label">Número de comensales *
-              <input type="number" class="form__input" id="number" min="1" max="8" placeholder="1-8" required></label>
-              <label for="datetime" class="form__label">Fecha y hora *
-              <input type="datetime-local" class="form__input" id="datetime" required></label>
-              <label for="email" class="form__label">Tu correo electrónico *
-              <input type="email" class="form__input" id="email" placeholder="email@email.com" required></label>
+              <label for="name" class="form__label"
+                >Nombre *
+                <input
+                  type="text"
+                  class="form__input"
+                  id="name"
+                  placeholder="Nombre"
+                  required
+              /></label>
+              <label for="number" class="form__label"
+                >Número de comensales *
+                <input
+                  type="number"
+                  class="form__input"
+                  id="number"
+                  min="1"
+                  max="8"
+                  placeholder="1-8"
+                  required
+              /></label>
+              <label for="datetime" class="form__label"
+                >Fecha y hora *
+                <input
+                  type="datetime-local"
+                  class="form__input"
+                  id="datetime"
+                  required
+              /></label>
+              <label for="email" class="form__label"
+                >Tu correo electrónico *
+                <input
+                  type="email"
+                  class="form__input"
+                  id="email"
+                  placeholder="email@email.com"
+                  required
+              /></label>
             </fieldset>
-            <button class="form__button" type="submit">Reservar una mesa</button>
-            <label class="form__label form__label_position_center"><input type="checkbox" id="términos" class="form__checkbox"> Acepto los términos de uso</label>
+            <button class="form__button" type="submit">
+              Reservar una mesa
+            </button>
+            <label class="form__label form__label_position_center"
+              ><input type="checkbox" id="términos" class="form__checkbox" />
+              Acepto los términos de uso</label
+            >
           </form>
         </section>
       </main>
-      <footer class="footer" id="footer"></footer>
+      <footer class="footer" id="footer">
+        <div class="footer__content">
+          <img
+            src="./images/logo_coffeeshop_light.svg"
+            alt="Logotipo blanco de Cafetería Triple Macchiato"
+            class="footer__logo"
+          />
+          <div class="footer__circle"></div>
+          <div class="footer__social">
+            <h2 class="footer__social-heading">Redes sociales</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <img
+                  src="./images/facebook_white.svg"
+                  alt="Icono blanco de Facebook"
+                  class="footer__social-icon"
+                />
+                <a href="#" class="footer__social-link">Facebook</a>
+              </li>
+              <li class="footer__list-item">
+                <img
+                  src="./images/instagram_white.svg"
+                  alt="Icono blanco de Instagram"
+                  class="footer__social-icon"
+                />
+                <a href="#" class="footer__social-link">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">@ 2025 Hakeem Ortiz</p>
+      </footer>
     </div>
   </body>
 </html>
