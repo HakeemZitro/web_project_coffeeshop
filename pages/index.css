@@ -170,6 +170,7 @@ fieldset {
 }
 
 .reservation {
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   background-color: #D9E7FF;
@@ -180,7 +181,7 @@ fieldset {
 }
 
 .reservation__title {
-  margin: 100px auto 80px;
+  margin: 0 auto 80px;
   text-align: center;
   font-weight: 500;
   font-size: 44px;
